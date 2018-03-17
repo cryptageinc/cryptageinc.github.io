@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<title>Cryptage Inc</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  
+  line-height: 1.8;
+}
+h3{
+  text-align: center;
+}
+.container {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+.container .btn-holder {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.anurag{
+  width:100%;
+  height:250px;
+  background-color:#475;
+  overflow:scroll;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/bg.jpg');
+  min-height: 100%;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+</style>
+
+<body>
+
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top" id="#home">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">CRYPTAGE</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> OUR SERVICES</a>
+      <a href="#training" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> TRAINING</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#training" class="w3-bar-item w3-button" onclick="toggleFunction()">TRAINING</a>
+      <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+  </div> 
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CRYPTAGE <span class="w3-hide-small">INC</span> </span>
+    </div>
+  </div>
+
+
+<!-- Header 
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="images/bg.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Cryptage</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header> -->
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Services</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 anurag">
+      <h3>Corporate Training</h3>
+      <br>
+      <p>Technology training provided on demand for enterprise workforce development.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16 anurag">
+      <h3>College Training</h3>
+      <br>
+      <p>We help freshers learn skills from Industry Experts and practice real world projects with 24/7 assistance.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16 anurag">
+      <h3>Calendar Training</h3>
+      <br>
+      <p>Book our trainers from their calendar and help your organization grow.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16 anurag">
+      <h3>Development and Consulting</h3>
+      <p>Get IT solutions directly from our group of technical experts in nominal rates.</p>
+    </div>
+  </div>
+  
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Cryptage, is a globally acclaimed individual and corporate training provider, has a legacy of empowering professionals with knowledge since 14+ years. Till date we have enlightened and trained 5,000+ professionals around the world.
+<br>
+We are renowned players in conducting corporate training and open house workshops in Information Technology, IT Service Management, IT Governance, IT Infrastructure Library, Project Management, Behavioral and Management Solutions; and Foreign Languages for enterprises and governments worldwide.
+    </p>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b>Saurabh Sharma (CEO and Founder)</b></p><br>
+      <img src="images/ss.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <br><br><br><br>
+      <p align="justify"> I founded Cryptagte with a vision to provide quality education to everyone who deserves it. Cryptage will provide Industry like skill development to College Fresher in their budget. I want our student to learn and evolve. Cryptage helps the it's students to be capable of getting their dream job.  </p>
+    </div>
+
+  <!-- <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div> -->
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch.</p>
+    <form name="submit-to-google-sheet" action="mailto:cryptage@gmail.com" method="post" enctype="text/plain">
+      <input class="w3-input" type="text" placeholder="Name" required name="name">
+      <!-- <input class="w3-input w3-section" type="text" placeholder="Email" required name="email"> -->
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="message">
+      <input class="w3-button w3-black w3-section" type="submit" value='SEND MESSAGE'>
+        
+      </button>
+    </form>
+  </div> 
+
+
+
+  
+  <!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Made with love in India</p>
+</footer>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(28.530999, 77.153100);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByZw9SBK-HeXjsymXEQ6U34q_lSA5ZkR8&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+
+</body>
+</html>
